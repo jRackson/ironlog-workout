@@ -22,11 +22,24 @@ EASIEST SETUP (GitHub Pages, free):
 
 Using the app:
 - Home: start the next session or choose one of five days.
-- Workout: record kg/reps and tick each set. Completing a set starts a rest timer.
-- Plan: rename days, add/remove exercises, and change set/rep/rest targets.
-- Progress: view sessions, volume estimate, best logged weights, and optional bodyweight entries.
+- Workout: weights and reps are pre-filled with your targets. Adjust to what you actually lifted and tick each set. Completing a set starts a rest timer. An unfinished workout is restored if you close the app.
+- Plan: rename days, add/remove exercises, and set sets, rep range, weight, weight jump and rest.
+- Progress: see next targets for every exercise, view sessions, volume estimate, best logged weights, and optional bodyweight entries.
 - History: inspect completed sessions.
-- More: export/import a JSON backup.
+- More: turn automatic progression on/off, export/import a JSON backup.
+
+PROGRESSIVE OVERLOAD (automatic):
+Each exercise has a rep range (e.g. 6-10), a weight and a weight jump (e.g. 2.5 kg). After you tap Finish & save:
+- Hit the rep target on every set -> next time the target is 1 rep higher.
+- Every set reaches the top of the range -> weight goes up by the jump and reps reset to the bottom of the range.
+- Missed the target -> same weight and target repeat.
+- Below the bottom of the range two sessions in a row -> weight drops about 10%.
+- Skipped or partly finished exercises are left unchanged.
+Leave a weight blank in Plan if unsure: enter it in your first workout and IronLog uses it as the starting point.
+Your existing plan and history are kept when you update.
+
+UPDATING AN EXISTING INSTALL:
+Replace index.html and sw.js in your GitHub repository (upload and commit), wait a minute, then open the app online and close/reopen it once or twice to load the new version.
 
 DATA / PRIVACY:
 Workout data is stored in the browser's local storage on the device; the hosted files do not receive your logs. Export a backup regularly. Avoid clearing Safari website data, which may erase local logs. The app is offline-first after the first successful online load. iOS can pause timers when the app is backgrounded or the phone locks, so keep the timer visible and use the iPhone Clock as a backup for long intervals.
