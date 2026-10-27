@@ -22,11 +22,11 @@ EASIEST SETUP (GitHub Pages, free):
 
 Using the app:
 - Home: start the next session or choose one of five days.
-- Workout: weights and reps are pre-filled with your targets. Adjust to what you actually lifted and tick each set. Completing a set starts a rest timer. An unfinished workout is restored if you close the app.
+- Workout: weights and reps are pre-filled with your targets. Use the - / + buttons (or type) to match what you lifted, tick each set, and a floating rest timer starts automatically. Add a note per exercise (carries forward) and per workout. The screen stays awake during a workout and an unfinished workout is restored if you close the app.
 - Plan: rename days, add/remove exercises, and set sets, rep range, weight, weight jump and rest.
-- Progress: see next targets for every exercise, view sessions, volume estimate, best logged weights, and optional bodyweight entries.
-- History: inspect completed sessions.
-- More: turn automatic progression on/off, export/import a JSON backup.
+- Progress: charts per exercise (weight, estimated 1RM, volume, reps), next targets for every exercise, view sessions, volume estimate, best logged weights, and optional bodyweight entries.
+- History: open any session to edit sets or delete it. If it is your latest session for an exercise, its next target is recalculated.
+- More: light/dark/match-device theme, keep-awake and auto-progression switches, back up (share to Files/iCloud/email) and import.
 
 PROGRESSIVE OVERLOAD (automatic):
 Each exercise has a rep range (e.g. 6-10), a weight and a weight jump (e.g. 2.5 kg). After you tap Finish & save:
@@ -37,6 +37,12 @@ Each exercise has a rep range (e.g. 6-10), a weight and a weight jump (e.g. 2.5 
 - Skipped or partly finished exercises are left unchanged.
 Leave a weight blank in Plan if unsure: enter it in your first workout and IronLog uses it as the starting point.
 Your existing plan and history are kept when you update.
+
+UNDO:
+After saving a workout, deleting an exercise/day/workout, editing a past workout, importing or clearing history, a bar appears at the top of the screen for about 9 seconds with an Undo button.
+
+BACKUPS:
+Home shows a reminder when you have not backed up for 14 days. Tap Back up now and choose Files, iCloud Drive, email or AirDrop. Safari website data is the only copy of your history, so keep backups.
 
 UPDATING AN EXISTING INSTALL:
 Replace index.html and sw.js in your GitHub repository (upload and commit), wait a minute, then open the app online and close/reopen it once or twice to load the new version.
